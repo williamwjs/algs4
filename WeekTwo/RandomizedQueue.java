@@ -1,15 +1,33 @@
 package WeekTwo;
 
+import java.util.Iterator;
+
 /**
  * Created by JiashuoWang on 7/22/14.
  */
 public class RandomizedQueue<Item> implements Iterable<Item> {
-    public RandomizedQueue()                 // construct an empty randomized queue
-    public boolean isEmpty()                 // is the queue empty?
-    public int size()                        // return the number of items on the queue
-    public void enqueue(Item item)           // add the item
-    public Item dequeue()                    // delete and return a random item
-    public Item sample()                     // return (but do not delete) a random item
-    public Iterator<Item> iterator()         // return an independent iterator over items in random order
-    public static void main(String[] args)   // unit testing
+    // construct an empty randomized queue
+    public RandomizedQueue() {
+    }
+    // is the queue empty?
+    public boolean isEmpty() {
+    }
+    // return the number of items on the queue
+    public int size() {
+    }
+    // add the item
+    public void enqueue(Item item) {
+    }
+    // delete and return a random item
+    public Item dequeue() {
+    }
+    // return (but do not delete) a random item
+    public Item sample() {
+    }
+    // return an independent iterator over items in random order
+    public Iterator<Item> iterator() {
+    }
+    // unit testing
+    public static void main(String[] args) {
+    }
 }
