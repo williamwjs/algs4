@@ -5,7 +5,7 @@ package WeekTwo;
  */
 public class Subset {
     public static void main(String[] args) {
-        int k = 3;
+        //int k = 3;
         //int N = 9;
         RandomizedQueue<String> rq = new RandomizedQueue<String>();
         //for (int i = 0; i < N; i++) {

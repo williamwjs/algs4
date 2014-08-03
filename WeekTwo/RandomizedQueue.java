@@ -8,8 +8,8 @@ import java.util.NoSuchElementException;
  */
 public class RandomizedQueue<Item> implements Iterable<Item> {
     private static class Node<Item> {
-        Item item;
-        Node<Item> next;
+        private Item item;
+        private Node<Item> next;
         Node() {
             this.item = null;
             this.next = null;
@@ -75,7 +75,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
     // return an independent iterator over items in random order
     public Iterator<Item> iterator() {
         return new Iterator<Item>() {
-            Node<Item> node = head;
+            private Node<Item> node = head;
             @Override
             public boolean hasNext() {
                 return node != tail;

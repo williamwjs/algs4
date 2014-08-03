@@ -8,9 +8,9 @@ import java.util.NoSuchElementException;
  */
 public class Deque<Item> implements Iterable<Item> {
     private static class Node<Item> {
-        Item item;
-        Node<Item> next;
-        Node<Item> prev;
+        private Item item;
+        private Node<Item> next;
+        private Node<Item> prev;
         Node(Item item, Node<Item> prev, Node<Item> next) {
             this.item = item;
             this.prev = prev;
@@ -79,7 +79,7 @@ public class Deque<Item> implements Iterable<Item> {
     // return an iterator over items in order from front to end
     public Iterator<Item> iterator() {
         return new Iterator<Item>() {
-            Node<Item> node = head;
+            private Node<Item> node = head;
             @Override
             public boolean hasNext() {
                 return node.next != tail;
